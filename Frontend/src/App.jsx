@@ -8,7 +8,6 @@ import AdminPanel from "./components/AdminPanel";
 import Dashboard from "./components/Dashboard";
 import SubcategoryPage from "./components/SubcategoryPage";
 
-
 const App = () => {
   return (
     <Routes>
@@ -24,4 +23,3 @@ const App = () => {
 };
 
 export default App;
-
