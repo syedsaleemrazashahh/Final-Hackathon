@@ -24,12 +24,16 @@ const LoanRequestForm = () => {
 
   return (
     <div className="min-h-screen flex flex-col py-8">
-      <h2 className="text-3xl font-semibold text-center mb-6">Loan Request Form</h2>
+      <h2 className="text-3xl font-semibold text-center mb-6">
+        Loan Request Form
+      </h2>
       <div className="container mx-auto max-w-md">
         <form onSubmit={handleSubmit}>
           {/* User Information */}
           <div className="mb-4">
-            <label htmlFor="name" className="block text-lg font-semibold">Full Name</label>
+            <label htmlFor="name" className="block text-lg font-semibold">
+              Full Name
+            </label>
             <input
               id="name"
               name="name"
@@ -37,13 +41,16 @@ const LoanRequestForm = () => {
               className="w-full p-2 border rounded"
               value={formData.name}
               onChange={handleChange}
-              required
+              requi
             />
           </div>
 
           {/* Additional fields (email, phone, etc.) */}
 
-          <button type="submit" className="px-6 py-3 bg-red-900 text-white rounded-lg shadow-lg w-full">
+          <button
+            type="submit"
+            className="px-6 py-3 bg--900 text-white rounded-lg shadow-lg w-full"
+          >
             Submit Request
           </button>
         </form>

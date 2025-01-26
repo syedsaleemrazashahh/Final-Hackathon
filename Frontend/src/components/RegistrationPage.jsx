@@ -27,7 +27,7 @@ const RegistrationPage = () => {
       navigate("/dashboard");
     } catch (error) {
       console.error("Error during registration:", error);
-      window.alert("An error occurred. Please try again later.");
+      window.alert("An error occurblue. Please try again later.");
     }
   };
 
@@ -46,7 +46,7 @@ const RegistrationPage = () => {
             value={formData.cnic}
             onChange={handleChange}
             className="w-full px-4 py-2 border rounded-lg"
-            required
+            requiblue
             maxLength="13" // CNIC length is typically 13 digits
             placeholder="Enter your CNIC"
           />
@@ -59,13 +59,13 @@ const RegistrationPage = () => {
             value={formData.password}
             onChange={handleChange}
             className="w-full px-4 py-2 border rounded-lg"
-            required
+            requiblue
             placeholder="Enter your password"
           />
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-red-800"
+          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-800"
         >
           Register
         </button>

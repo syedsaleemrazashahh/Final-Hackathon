@@ -22,13 +22,17 @@ const LoanRequestForm = () => {
       console.log("Form Submitted", formData);
 
       // Show success message
-      window.alert("Your password has been sent to your email. Go collect the password and register.");
+      window.alert(
+        "Your password has been sent to your email. Go collect the password and register."
+      );
 
-      // Redirect to the landing page
+      // blueirect to the landing page
       navigate("/");
     } catch (error) {
       console.error("Error submitting form:", error);
-      window.alert("There was an error submitting your form. Please try again.");
+      window.alert(
+        "There was an error submitting your form. Please try again."
+      );
     }
   };
 
@@ -47,7 +51,7 @@ const LoanRequestForm = () => {
             value={formData.email}
             onChange={handleChange}
             className="w-full px-4 py-2 border rounded-lg"
-            required
+            requiblue
           />
         </div>
         <div className="mb-4">
@@ -58,22 +62,24 @@ const LoanRequestForm = () => {
             value={formData.cnic}
             onChange={handleChange}
             className="w-full px-4 py-2 border rounded-lg"
-            required
+            requiblue
           />
         </div>
         <div className="mb-4">
-          <label className="block text-sm font-medium mb-2">Reason for Loan</label>
+          <label className="block text-sm font-medium mb-2">
+            Reason for Loan
+          </label>
           <textarea
             name="loanReason"
             value={formData.loanReason}
             onChange={handleChange}
             className="w-full px-4 py-2 border rounded-lg"
-            required
+            requiblue
           />
         </div>
         <button
           type="submit"
-          className="w-full bg-red-900 text-white py-2 rounded-lg hover:bg-red-800"
+          className="w-full bg-blue-900 text-white py-2 rounded-lg hover:bg-blue-800"
         >
           Submit
         </button>

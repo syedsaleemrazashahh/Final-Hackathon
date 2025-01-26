@@ -68,11 +68,18 @@ const LoanCalculator = () => {
 
   return (
     <div className="min-h-screen flex flex-col py-8">
-      <h2 className="text-3xl font-semibold text-center mb-6">Loan Calculator</h2>
+      <h2 className="text-3xl font-semibold text-center mb-6">
+        Loan Calculator
+      </h2>
       <div className="container mx-auto max-w-md">
         <form>
           <div className="mb-6">
-            <label htmlFor="loanCategory" className="block text-lg font-semibold">Loan Category</label>
+            <label
+              htmlFor="loanCategory"
+              className="block text-lg font-semibold"
+            >
+              Loan Category
+            </label>
             <select
               id="loanCategory"
               className="w-full p-2 border rounded"
@@ -85,9 +92,10 @@ const LoanCalculator = () => {
               <option value="education">Education</option>
             </select>
           </div>
-
           <div className="mb-6">
-            <label htmlFor="loanPeriod" className="block text-lg font-semibold">Loan Period</label>
+            <label htmlFor="loanPeriod" className="block text-lg font-semibold">
+              Loan Period
+            </label>
             <select
               id="loanPeriod"
               className="w-full p-2 border rounded"
@@ -99,9 +107,10 @@ const LoanCalculator = () => {
               <option value="7">7 Years</option>
             </select>
           </div>
-
           <div className="mb-6">
-            <label htmlFor="loanAmount" className="block text-lg font-semibold">Loan Amount</label>
+            <label htmlFor="loanAmount" className="block text-lg font-semibold">
+              Loan Amount
+            </label>
             <input
               id="loanAmount"
               type="number"
@@ -111,9 +120,10 @@ const LoanCalculator = () => {
               onChange={(e) => setLoanAmount(e.target.value)}
             />
           </div>
-
           <div className="mb-6">
-            <label htmlFor="deposit" className="block text-lg font-semibold">Initial Deposit</label>
+            <label htmlFor="deposit" className="block text-lg font-semibold">
+              Initial Deposit
+            </label>
             <input
               id="deposit"
               type="number"
@@ -123,13 +133,12 @@ const LoanCalculator = () => {
               onChange={(e) => setDeposit(e.target.value)}
             />
           </div>
-
-          {error && <p className="text-red-600 text-center">{error}</p>} {/* Display error message */}
-
+          {error && <p className="text-blue-600 text-center">{error}</p>}{" "}
+          {/* Display error message */}
           <button
             type="button"
             onClick={calculateLoan}
-            className="px-6 py-3 bg-red-900 text-white rounded-lg shadow-lg"
+            className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg"
           >
             Calculate Loan
           </button>
@@ -139,14 +148,18 @@ const LoanCalculator = () => {
         {monthlyPayment && totalRepayment && (
           <div className="mt-6 text-center">
             <h3 className="text-xl font-semibold">Loan Calculation Results</h3>
-            <p>Monthly Payment: <strong>₨ {monthlyPayment}</strong></p>
-            <p>Total Repayment: <strong>₨ {totalRepayment}</strong></p>
+            <p>
+              Monthly Payment: <strong>₨ {monthlyPayment}</strong>
+            </p>
+            <p>
+              Total Repayment: <strong>₨ {totalRepayment}</strong>
+            </p>
 
             {/* Register Button */}
             <div className="mt-6">
               <button
                 onClick={goToRegister}
-                className="px-6 py-3 bg-red-900 text-white rounded-lg shadow-lg hover:bg-red-800 transition duration-300"
+                className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-600 transition duration-300"
               >
                 Register Now
               </button>
